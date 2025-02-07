@@ -7,20 +7,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        section {
+            display: flex;
+        }
+        section img{
+            width: 400px;
+            border-radius: 16px 0 0 16px;
+        }
+
+        .product{
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 0 16px 16px 0;
+            padding: 32px;
+        }
+
+        #perfume{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+    
+        section div h1{
+            font-family: 'faunces'
+            font-weight: 700;
+            font-size: 64px;
+        }
+        section div p {
+           font-family: 'Monserrat' 
+           font-weight: 500;
+           font-size: 24px;
+        }
+        #price{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border: 1px solid
+        }
+        #price h2{
+            font-family: "fraunces";
+            font-size: 48px;
+            color: hsl(158, 36%, 37%);
+            margin-right: 15px;
+            border: none;
+        }
+        #price span{
+            font-family: "Montserrat";
+            font-size: 20px;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            background-color: hsl(158, 36%, 37%);
+            border-radius: 12px;
+            height: 65px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        #cart-shop{
+          width: 24px;  
+          margin-right: 16px;
+        }
+    </style>
+
+
+
 </head>
 <body>
     <section>
         <img src="./imagenes/image-product-desktop.jpg" alt="Chanel">
-        <div>
-            <span>Perfume</span>
+        <div class="product">
+            <span id="perfume">PERFUME</span>
             <h1>Gabrielle Essence Eau de Parium</h1>
             <p>A floral, solar and voluptous interpretation composed by Olivier Polge, Perfumer Creator for the House of CHANEL.</p>
-            <div>
+            <div id="price">
                 <h2>149.99</h2>
                 <p>169.99</p>
             </div>
             <button>
-                <img src="./imagenes/icon-cart.svg" alt="Cart">
+                <img id="cart-shop" src="./imagenes/icon-cart.svg" alt="Cart">
                 Add to Cart</button>
         </div>
     </section>
